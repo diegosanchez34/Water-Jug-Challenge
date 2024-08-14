@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="card">
+        <h1>Water Jug Challenge</h1>
+        <div>
+          <label htmlFor="input1">Capacity Bucket X:</label>
+          <input type="text" id="input1" />
+        </div>
+        <div>
+          <label htmlFor="input2">Capacity Bucket Y:</label>
+          <input type="text" id="input2" />
+        </div>
+        <div>
+          <label htmlFor="input3">Amount wanted Z:</label>
+          <input type="text" id="input3" />
+        </div>
+      </div>
+      <div className="card">
+        <h2>Resultado</h2>
+        <input type="text" id="resultado" />
+      </div>
     </div>
   );
 }
